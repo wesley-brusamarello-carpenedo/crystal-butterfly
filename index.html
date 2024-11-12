@@ -1,14 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> 
+    <title>Document</title>
+    <style>
+        .produtos {
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .produtos h1 {
+            color: #ffffff;
+        }
+
+        .grid {
+            position: relative;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .item {
+            position: relative;
+            background-color: #dddddd;
+            color: #000000;
+            border: 1px solid #000000;
+            border-radius: 1em;
+            margin: 1rem;
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .imagem-produto {
+            position: relative;
+            width: 80%;
+            height: 80%;
+        }
+    </style>
 </head>
+
 <body>
     <h1>cristal butterfly</h1>
     <h2>loja de artigo de luxo</h2>
-    <P>Uma loja de artigos de luxo exala sofisticação, com decoração elegante em tons neutros, vitrines sofisticadas e atendimento personalizado. Oferece produtos de marcas renomadas, incluindo edições limitadas, e proporciona uma experiência exclusiva com eventos especiais e espaços de convivência.</P>
+    <P>Uma loja de artigos de luxo exala sofisticação, com decoração elegante em tons neutros, vitrines sofisticadas e
+        atendimento personalizado. Oferece produtos de marcas renomadas, incluindo edições limitadas, e proporciona uma
+        experiência exclusiva com eventos especiais e espaços de convivência.</P>
 
+    <div class="produtos">
+        <h1>Nossos Produtos</h1>
+        <div class="grid">
+            <div class="item">
+                <h2>Nome do Produto</h2>
+                <img class="imagem-produto" src="img/teste.png">
+                <p>Tamanho: </p>
+                <p>Preço: R$</p>
+            </div>
+            <div class="item">
+                <h2>Nome do Produto</h2>
+                <img class="imagem-produto" src="img/teste.png">
+                <p>Tamanho: </p>
+                <p>Preço: R$</p>
+            </div>
+            <div class="item">
+                <h2>Nome do Produto</h2>
+                <img class="imagem-produto" src="img/teste.png">
+                <p>Tamanho: </p>
+                <p>Preço: R$</p>
+            </div>
+            <div class="item">
+                <h2>Nome do Produto</h2>
+                <img class="imagem-produto" src="img/teste.png">
+                <p>Tamanho: </p>
+                <p>Preço: R$</p>
+            </div>
+            <div class="item">
+                <h2>Nome do Produto</h2>
+                <img class="imagem-produto" src="img/teste.png">
+                <p>Tamanho: </p>
+                <p>Preço: R$</p>
+            </div>
+            <div class="item">
+                <h2>Nome do Produto</h2>
+                <img class="imagem-produto" src="img/teste.png">
+                <p>Tamanho: </p>
+                <p>Preço: R$</p>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
